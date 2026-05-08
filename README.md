@@ -1,6 +1,6 @@
 # Bath Spa University
 
-Coursework and assessment portfolio for my BSc studies at **Bath Spa University (Canary Wharf)**.
+Coursework and assessment portfolio for my BSc studies at **Bath Spa University**.
 
 ---
 
