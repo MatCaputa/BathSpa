@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<!--
+  Exercise 4: Web Accessibility
+  Accessible travel photography gallery with WCAG 2.1 AA compliance
+  Author: Mateusz Caputa
+  Date: 2026
+-->
+<html lang="en">
+
+<!--Document head. Meta tags, title, elements style.-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>The Wondering Photographer – Gallery</title>
+
+    <!--Include fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <!--Include css file.-->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!--Header, logo and page title.-->
+    <header>
+        <a href="#" aria-label="The Wondering Photographer – Gallery">
+            <img src="media/TheDivider.png" alt="">
+            <h1>The Wondering Photographer</h1>
+        </a>
+    </header>
+
+    <!--Navigation with shopping cart.-->
+    <nav aria-label="Main navigation">
+        <ul>
+            <li><a href="#" aria-current="page">Home</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">About me</a></li>
+        </ul>
+
+        <a href="#" aria-label="Shopping basket">
+            <img src="media/shopping.svg" alt="" width="32" height="32" aria-hidden="true">
+            Basket
+        </a>
+    </nav>
+
+    <!--Main page content.-->
+    <main>
+
+        <!--Section with pictures gallery.-->
+        <section aria-label="Photo gallery">
+
+            <!--Section title and description-->
+            <h2>Gallery</h2>
+            <p>Explore the world through my lens. From the fjords of Greenland to the iconic bridges of America, each
+                photograph tells a story. Browse the collection and bring your favourite prints home.</p>
+
+            <!--Picture one: ocean.-->
+            <article>
+                <figure>
+                    <img src="media/OceanPhoto.jpg"
+                        alt="Two people sitting on the edge of a white rocky cliff overlooking a calm turquoise ocean at sunset, with soft pastel pink and blue tones in the sky">
+                    <figcaption>
+                        <h3>Greenland Ocean</h3>
+                        <p>This was from a fabulous trip to the cost of Greenland with my family. The water was lovely-
+                            but very cold!</p>
+                        <button type="button" aria-label="Add Greenland Ocean to basket">Add to basket</button>
+                    </figcaption>
+                </figure>
+            </article>
+
+            <!--Picture two: bridge.-->
+            <article>
+                <figure>
+                    <img src="media/BridgePhoto.jpg"
+                        alt="Low-angle view looking up at a red-orange suspension bridge tower against a clear blue sky, with steel cables extending from the top">
+                    <figcaption>
+                        <h3>Golden Gate Bridge</h3>
+                        <p>A picture of the Golden Gate Bridge. New York! New York!</p>
+                        <button type="button" aria-label="Add Golden Gate Bridge to basket">Add to basket</button>
+                    </figcaption>
+                </figure>
+            </article>
+
+            <!--Picture three: valley.-->
+            <article>
+                <figure>
+                    <img src="media/ValleyPhoto.jpg"
+                        alt="Panoramic view from a rocky mountain summit overlooking a narrow fjord winding between steep green and grey mountains under a partly cloudy sky">
+                    <figcaption>
+                        <h3>Greenland Valley</h3>
+                        <p>Another great photo from Greenland. It's a river valley where a glacier used to be.</p>
+                        <button type="button" aria-label="Add Greenland Valley to basket">Add to basket</button>
+                    </figcaption>
+                </figure>
+            </article>
+
+            <!--Picture four: waterfall.-->
+            <article>
+                <figure>
+                    <img src="media/WaterfallPhoto.jpg"
+                        alt="A tall waterfall cascading down a dark rocky cliff face into a misty pool, surrounded by bright green moss-covered rocks">
+                    <figcaption>
+                        <h3>Waterfall</h3>
+                        <p>The waterfall made such a lovely sound. I could have fallen asleep!</p>
+                        <button type="button" aria-label="Add Waterfall to basket">Add to basket</button>
+                    </figcaption>
+                </figure>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; The Wondering Photographer 2018.</p>
+    </footer>
+</body>
+
+</html>

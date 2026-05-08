@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<!--
+  Exercise 3: Page Layout
+  Photo gallery demonstrating Flexbox, Grid, Float, and lightbox preview
+  Author: Mateusz Caputa
+  Date: 2026
+-->
+<html lang="en">
+
+<!--Document head. Meta tags, title, elements style.-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>J's Gallery</title>
+
+    <!--Include css file.-->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<!--Main page body. Flexbox - Layout technique 1-->
+
+<body id="home">
+
+    <!--Gallery header with main navigation, element id links. ul grid Layout - technique 2-->
+    <header>
+        <h1>J's Gallery</h1>
+        <nav aria-label="Main navigation">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!--Main page container with sections.-->
+    <main>
+
+        <!--Section about with text wrapped around picture.-->
+        <section id="about" aria-label="Information about gallery">
+
+            <!--Picture with wrapped text. float right layout - technique 3-->
+            <img src="media/COW.jpg" alt="Cow">
+
+            <p>Lorem ipsum odor amet, consectetuer adipiscing elit. Praesent mollis adipiscing per id libero libero.
+                Tempus pretium netus molestie scelerisque facilisis tristique volutpat ultricies. Nostra ligula ac
+                pulvinar rutrum non rhoncus mauris facilisi. Quisque maximus commodo sollicitudin, montes congue
+                imperdiet. Est malesuada vivamus vestibulum ante aenean class. Per integer aptent ullamcorper sagittis
+                posuere dignissim morbi scelerisque. Fringilla primis sagittis lorem erat integer; vulputate nullam.
+                Porta purus habitant id fermentum nec ex, proin mauris sem.</p>
+
+            <p>Lectus ultrices nibh lobortis tempus facilisis sit conubia taciti. Non torquent amet nibh elit ante
+                fermentum praesent cras. Et suspendisse egestas eros erat aptent sollicitudin. Nulla tortor purus
+                posuere auctor himenaeos malesuada. Turpis phasellus enim venenatis aliquam pellentesque senectus, id
+                ultrices. Praesent tellus consequat phasellus cubilia mattis mauris natoque litora. Fringilla cursus
+                montes inceptos nec venenatis platea.</p>
+        </section>
+
+        <!--Section gallery, video and pictures, flexbox layout - technique 4-->
+        <section id="gallery" aria-label="Photo gallery">
+
+            <video controls>
+                <source src="media/video.mp4" type="video/mp4">
+                Your browser does not support video.
+            </video>
+
+            <img src="media/img4598.jpg" alt="Railway platforms at night" loading="lazy">
+
+            <img src="media/img4532.jpg" alt="Camera" loading="lazy">
+            <img src="media/photo_2018_02_01.jpg" alt="Mountains and trees" loading="lazy">
+
+            <img src="media/photo_2018_02_31.jpg" alt="Sky and forests" loading="lazy">
+            <img src="media/johns_car.jpg" alt="John's car" loading="lazy">
+
+        </section>
+    </main>
+
+    <!--Lightbox, picture preview -->
+    <div id="lightbox" role="dialog" aria-label="Image preview">
+        <button id="btnLightbox" aria-label="Close image preview">X Close</button>
+        <img src="#" id="imgLightbox">
+    </div>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+
+</html>

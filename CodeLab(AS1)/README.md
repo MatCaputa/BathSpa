@@ -9,15 +9,15 @@ A portfolio of ten C++ exercises that demonstrate the fundamental programming te
 
 | # | Exercise | File | Topics |
 | --- | --- | --- | --- |
-| 1 | Coding is Cool | [01-CodingIsCool.cpp](01-CodingIsCool.cpp) | `cout`, output streams |
-| 2 | Simple Sums | [02-SimpleSums.cpp](02-SimpleSums.cpp) | Variables, integer arithmetic, `constexpr` |
-| 3 | Biography | [03-Biography.cpp](03-Biography.cpp) | Strings, `getline`, function overloading, exception handling |
-| 4 | Primitive Quiz | [04-PrimitiveQuiz.cpp](04-PrimitiveQuiz.cpp) | 2D arrays, range-based `for`, case-insensitive comparison |
-| 5 | Days of the Month | [05-DaysOfTheMonth.cpp](05-DaysOfTheMonth.cpp) | `switch` statement |
-| 6 | Brute Force Attack | [06-BruteForceAttack.cpp](06-BruteForceAttack.cpp) | `while` loop, attempt counter |
-| 7 | Some Counting | [07-SomeCounting.cpp](07-SomeCounting.cpp) | `for` loops with custom step values |
-| 8 | Simple Search | [08-SimpleSearch.cpp](08-SimpleSearch.cpp) | Arrays, linear search |
-| 9 | Hello | [09-Hello.cpp](09-Hello.cpp) | Function definition and call |
+| 1 | Coding is Cool | [1-CodingIsCool.cpp](1-CodingIsCool.cpp) | `cout`, output streams |
+| 2 | Simple Sums | [2-SimpleSums.cpp](2-SimpleSums.cpp) | Variables, integer arithmetic, `constexpr` |
+| 3 | Biography | [3-Biography.cpp](3-Biography.cpp) | Strings, `getline`, function overloading, exception handling |
+| 4 | Primitive Quiz | [4-PrimitiveQuiz.cpp](4-PrimitiveQuiz.cpp) | 2D arrays, range-based `for`, case-insensitive comparison |
+| 5 | Days of the Month | [5-DaysOfTheMonth.cpp](5-DaysOfTheMonth.cpp) | `switch` statement |
+| 6 | Brute Force Attack | [6-BruteForceAttack.cpp](6-BruteForceAttack.cpp) | `while` loop, attempt counter |
+| 7 | Some Counting | [7-SomeCounting.cpp](7-SomeCounting.cpp) | `for` loops with custom step values |
+| 8 | Simple Search | [8-SimpleSearch.cpp](8-SimpleSearch.cpp) | Arrays, linear search |
+| 9 | Hello | [9-Hello.cpp](9-Hello.cpp) | Function definition and call |
 | 10 | Is it Even? | [10-IsItEven.cpp](10-IsItEven.cpp) | Functions, parameters, return values |
 
 ---
@@ -27,7 +27,7 @@ A portfolio of ten C++ exercises that demonstrate the fundamental programming te
 Each `.cpp` file is a standalone program. Compile and run any of them with `g++` (C++17 or later):
 
 ```bash
-g++ -std=c++17 -Wall -Wextra -o coding_is_cool 01-CodingIsCool.cpp
+g++ -std=c++17 -Wall -Wextra -o coding_is_cool 1-CodingIsCool.cpp
 ./coding_is_cool
 ```
 
@@ -43,7 +43,7 @@ for f in *.cpp; do g++ -std=c++17 -Wall -Wextra -o "${f%.cpp}" "$f"; done
 
 Your task is to develop solutions to a series of coding exercises that will test your knowledge of the fundamental programming techniques introduced through the course of the module. These exercises complement the content delivered in class each week and allow you to put into practice what you have learned.
 
-When completing the exercises you should create a new project for each one and save them to this folder. Each exercise should be appropriately named (e.g. `01-CodingIsCool`) so they are easy to find.
+When completing the exercises you should create a new project for each one and save them to this folder. Each exercise should be appropriately named (e.g. `1-CodingIsCool`) so they are easy to find.
 
 ---
 
@@ -63,7 +63,7 @@ int main() {
 }
 ```
 
-> Solution: [01-CodingIsCool.cpp](01-CodingIsCool.cpp)
+> Solution: [1-CodingIsCool.cpp](1-CodingIsCool.cpp)
 
 ---
 
@@ -74,7 +74,7 @@ int main() {
 * Declare a third variable of data type integer that adds the previous variables together.
 * Print the value of the sum to the console.
 
-> Solution: [02-SimpleSums.cpp](02-SimpleSums.cpp)
+> Solution: [2-SimpleSums.cpp](2-SimpleSums.cpp)
 
 ---
 
@@ -94,7 +94,7 @@ Create a program that prints your name, hometown and age to the console:
 
 *If completing the optional requirements you may use `cout` more than once to request user input. However the output of information must be performed with a single `cout`.*
 
-> Solution: [03-Biography.cpp](03-Biography.cpp) — uses `getline` for multi-word input and `try/catch` around `stoi` for numeric validation.
+> Solution: [3-Biography.cpp](3-Biography.cpp) — uses `getline` for multi-word input and `try/catch` around `stoi` for numeric validation.
 
 ---
 
@@ -112,7 +112,7 @@ You have been asked to write a simple question-and-answer programme. There is on
 * What about capital letters? (e.g. `paris` vs `Paris` vs `PaRis`)
 * Add additional questions (e.g. 10 Capital Cities of Europe Quiz).
 
-> Solution: [04-PrimitiveQuiz.cpp](04-PrimitiveQuiz.cpp) — implements a 10-question European capitals quiz with case-insensitive matching.
+> Solution: [4-PrimitiveQuiz.cpp](4-PrimitiveQuiz.cpp) — implements a 10-question European capitals quiz with case-insensitive matching.
 
 ---
 
@@ -120,7 +120,7 @@ You have been asked to write a simple question-and-answer programme. There is on
 
 Write a program that uses a `switch` statement to tell a user how many days there are in a month. Cases should test a number corresponding to the months (e.g. `1` = January, `12` = December), and each case should print out how many days are in that month.
 
-> Solution: [05-DaysOfTheMonth.cpp](05-DaysOfTheMonth.cpp)
+> Solution: [5-DaysOfTheMonth.cpp](5-DaysOfTheMonth.cpp)
 
 ---
 
@@ -134,7 +134,7 @@ Write a programme that defines the correct password as `12345` and allows users 
 
 Modify the solution to include a maximum of 5 password attempts. Each time the user enters an incorrect password, they should be told how many attempts remain. If there are 5 failed password attempts, the **while loop** should end and the program should inform the user that the authorities have been alerted!
 
-> Solution: [06-BruteForceAttack.cpp](06-BruteForceAttack.cpp)
+> Solution: [6-BruteForceAttack.cpp](6-BruteForceAttack.cpp)
 
 ---
 
@@ -150,7 +150,7 @@ Use the `for` loop to complete the following tasks. Print all values to the cons
 
 *All loops may be in a single project.*
 
-> Solution: [07-SomeCounting.cpp](07-SomeCounting.cpp)
+> Solution: [7-SomeCounting.cpp](7-SomeCounting.cpp)
 
 ---
 
@@ -164,7 +164,7 @@ The program should loop the array and test each index against the search term. I
 
 Allow the user to enter the name to be searched.
 
-> Solution: [08-SimpleSearch.cpp](08-SimpleSearch.cpp)
+> Solution: [8-SimpleSearch.cpp](8-SimpleSearch.cpp)
 
 ---
 
@@ -188,7 +188,7 @@ int main(){
 }
 ```
 
-> Solution: [09-Hello.cpp](09-Hello.cpp)
+> Solution: [9-Hello.cpp](9-Hello.cpp)
 
 ---
 
