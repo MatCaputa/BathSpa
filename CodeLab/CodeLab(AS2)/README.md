@@ -5,22 +5,29 @@ A console-based **Vending Machine** application that demonstrates the more advan
 
 ---
 
-## Solution
+## Project Layout
 
-| File | Description |
+| Path | Description |
 | --- | --- |
-| [main.cpp](main.cpp) | Vending Machine entry point — menu, item selection, payment handling and change calculation. |
+| [CMakeLists.txt](CMakeLists.txt) | CMake build configuration — C++17, project name `vending_machine`, strict compiler warnings. |
+| [src/main.cpp](src/main.cpp) | Vending Machine entry point — menu, item selection, payment handling and change calculation. |
+| [include/](include/) | Public header files. |
+| [tests/](tests/) | Unit tests. |
+| `build/` | CMake build artifacts (generated, not tracked). |
 
 ---
 
 ## Building and Running
 
-The program is a single C++ application. Compile and run it with `g++` (C++17 or later):
+The project uses **CMake** (≥ 3.10) with C++17. To configure, build, and run:
 
 ```bash
-g++ -std=c++17 -Wall -Wextra -o vending_machine main.cpp
-./vending_machine
+cmake -S . -B build
+cmake --build build
+./build/vending_machine
 ```
+
+To rebuild after changes, re-run `cmake --build build`. Strict warnings are enabled (`-Wall -Wextra -Wpedantic` on GCC/Clang, `/W4` on MSVC).
 
 ---
 
