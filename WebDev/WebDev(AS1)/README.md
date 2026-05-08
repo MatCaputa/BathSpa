@@ -10,10 +10,10 @@ Your solution to each exercise should be well organised, appropriately named, an
 ## The Brief
 Your task is to code solutions to a series of set exercises that will test your knowledge of fundamental web development techniques. The exercises can be found in your Web Dev I GitHub repository. Each exercise focuses on a different topic taught in class to allow you to put into practice what you have learned.  
 
-* **[Exercise 1](exercise-1-semantic-markup)**: Semantic Markup
-* **[Exercise 2](exercise-2-css-styling)**: CSS Styling
-* **[Exercise 3](exercise-3-page-layout)**: Page Layout
-* **[Exercise 4](exercise-4-web-accessibility)**: Web Accessibility
+* **[Exercise 1](1-SemanticMarkup)**: Semantic Markup
+* **[Exercise 2](2-CssStyling)**: CSS Styling
+* **[Exercise 3](3-PageLayout)**: Page Layout
+* **[Exercise 4](4-WebAccessibility)**: Web Accessibility
 
 You must attempt all four exercises in order to pass. Each exercise is worth 25 marks; where 20 marks are available for the correct use of the required techniques; and 5 marks are available for repository presentation, helpful commenting, and the correct use of coding conventions. Your mark for the assessment will be calculated by adding together your mark for each exercise.
 
