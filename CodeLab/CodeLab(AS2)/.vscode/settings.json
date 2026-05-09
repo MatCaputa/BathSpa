@@ -20,5 +20,6 @@
     "C_Cpp.clang_format_path": "/usr/bin/clang-format",
     "files.trimTrailingWhitespace": true,
     "files.insertFinalNewline": true,
-    "files.trimFinalNewlines": true
+    "files.trimFinalNewlines": true,
+    "C_Cpp.errorSquiggles": "disabled"
 }

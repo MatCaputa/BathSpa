@@ -1,32 +1,25 @@
 #pragma once
+
 #include <string>
 
-#include "ProductCategory.h"
-
-// Class Product definition
 class Product {
 public:
-    // Class Product constructor
-    Product(std::string code, std::string name, double price, ProductCategory category, int stock);
+    enum class Category {
+        DRINK,
+        SNACK
+    };
 
-    // Class getter methods definition
-    const std::string& code() const { return code_; }
-
-    const std::string& name() const { return name_; }
-
-    double price() const { return price_; }
-
-    ProductCategory category() const { return category_; }
-
-    int stock() const { return stock_; }
-
-    bool inStock() const { return stock_ > 0; }
+    static std::string toString(Category c);
 
 private:
-    // Member Variable declaration
-    std::string code_;
-    std::string name_;
+    std::string label_;
     double price_;
-    ProductCategory category_;
-    int stock_;
+    Category category_;
+
+public:
+    Product(std::string label, double price, Category category);
+    const std::string& label() const { return label_; };
+    double price() const { return price_; };
+    const Category& category() const { return category_; };
+    std::string categoryText() const { return toString(category_); };
 };

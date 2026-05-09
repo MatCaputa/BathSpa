@@ -130,7 +130,7 @@ ShortNamespaceLines: 1
 # ------------------------------------------------------------
 EmptyLineBeforeAccessModifier: LogicalBlock
 EmptyLineAfterAccessModifier: Never
-KeepEmptyLinesAtTheStartOfBlocks: false
+KeepEmptyLinesAtTheStartOfBlocks: true
 MaxEmptyLinesToKeep: 1
 SeparateDefinitionBlocks: Leave
 

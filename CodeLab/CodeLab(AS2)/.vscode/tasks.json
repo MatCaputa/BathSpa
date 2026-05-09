@@ -2,6 +2,35 @@
     "version": "2.0.0",
     "tasks": [
         {
+            "label": "Run in Gnome",
+            "type": "shell",
+            "command": "env",
+            "args": [
+                "-u",
+                "LD_LIBRARY_PATH",
+                "-u",
+                "GTK_PATH",
+                "-u",
+                "GIO_MODULE_DIR",
+                "gnome-terminal",
+                "--",
+                "bash",
+                "-c",
+                "\"$BIN\"; echo; read -p Press\u00a0enter\u00a0to\u00a0close..."
+            ],
+            "options": {
+                "env": {
+                    "BIN": "${workspaceFolder}/build/vending_machine"
+                }
+            },
+            "problemMatcher": [],
+            "presentation": {
+                "reveal": "never",
+                "panel": "shared",
+                "showReuseMessage": false
+            }
+        },
+        {
             "label": "CMake: Configure",
             "type": "shell",
             "command": "cmake",
@@ -61,6 +90,15 @@
             "dependsOn": [
                 "CMake: Build",
                 "Run"
+            ],
+            "problemMatcher": []
+        },
+        {
+            "label": "Build and Run in Gnome",
+            "dependsOrder": "sequence",
+            "dependsOn": [
+                "CMake: Build",
+                "Run in Gnome"
             ],
             "group": {
                 "kind": "build",
